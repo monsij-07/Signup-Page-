@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:"Roboto", sans-serif;
+    color: hsl(234, 29%, 20%);
+}
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    background-color:hsl(235, 18%, 26%);
+}
+
+.container{
+    display:flex;
+    width:700px;
+    background-color:white;
+    padding:40px;
+    border-radius:30px;
+}
+
+.left-container{
+    width:50%;
+}
+
+.right-container{
+    width:50%;
+}
+
+.right-container img{
+    width:100%;
+    height:100%;
+}
+
+.left-container-heading{
+    font-size:45px;
+    margin-top:70px;
+    font-weight:700;
+}
+
+.left-container-text{
+    font-size: 0.9rem;
+    margin-top:20px;
+}
+
+.left-container-list{
+    list-style:none;
+    font-size: 0.9rem;
+    margin-top:20px;
+}
+
+.left-container-list li{
+    background-image: url(assets/images/icon-success.svg);
+    background-repeat: no-repeat;
+    background-size: auto 17px;
+    padding-left: 30px;
+    margin: 14px 0;
+}
+
+.left-container-form{
+    display:flex;
+    flex-direction:column;
+    width:300px;
+    margin-top:40px;
+}
+
+.left-container-form-label{
+    display:flex;
+    justify-content:space-between;
+}
+
+.label{
+    font-size: 0.8rem;
+    font-weight:700;
+}
+
+.invalid-email{
+    font-size:0.8rem;
+    color: rgb(255, 92, 92);
+}
+
+.left-container-form-input{
+    padding:15px;
+    border-radius:7px;
+    border: 1px solid rgb(183, 182, 182);
+    margin-top:5px;
+}
+
+.left-container-form-button{
+    padding:15px;
+    color:white;
+    background-color: hsl(234, 29%, 20%);
+    border-radius:7px;
+    border-style:none;
+    margin-top:20px;
+}
+
+.left-container-form-button:hover{
+    background-color: rgb(255, 92, 92);
+    cursor: pointer;
+}
+
+.hide{
+    display:none;
+}
+
+
+/* SUCCESSFUL MESSAGE PAGE */
+
+.success-message-page{
+    width:300px;
+    background-color:white;
+    padding:40px;
+    color:hsl(234, 29%, 20%);
+    border-radius: 30px;
+}
+
+.success-message-icon-container{
+    width:50px;
+    height:50px;
+}
+
+.success-message-icon{
+    height:100%;
+    width:100%;
+}
+
+.success-message{
+    font-weight: 700;
+    margin-top:30px;
+    font-size: 2.5rem;
+}
+
+.success-text{
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+#received-email{
+    font-weight:700;
+}
+
+.dismiss-button{
+    background-color: hsl(234, 29%, 20%);
+    color:white;
+    border-radius:10px;
+    width: 300px;
+    padding:15px 0;
+    font-size:0.9rem;
+    margin-top:30px;
+    border-style:none;
+}
+
+.dismiss-button:hover{
+    background-color: rgb(255, 92, 92);
+    cursor: pointer;
+}
+
+
+/* RESPONSIVE WEBPAGE */
+
+@media(max-width:768px){
+    .container{
+        flex-direction:column-reverse;
+        border-radius:0;
+    }
+
+    .left-container{
+        width:100%;
+    }
+
+    .right-container{
+        width:100%;
+    }
+}
